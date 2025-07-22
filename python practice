@@ -1,0 +1,117 @@
+# 1.-->adding two no 
+x=7
+y=7
+sum=x+y
+print("The Sum is:",sum)
+
+# 2.-->printing the square root of a no
+
+n= int(input("enter the value:"))
+sr=n**(0.5) # this is function to calculate the square root means double**
+print("The Square Root  is:",sr)
+
+# 3.--> to calculate the area of triangle
+base=int(input("Enter the base:"))
+height=int(input("Enter the height"))
+area=0.5*height*base
+print("Area of triangle:",area)
+
+# 4.--> swapping of two input values
+a=int(input("enter the first value:"))
+b=int(input("enter the second value:"))
+print("Values before swapping:",a,"and",b)
+t=a
+a=b
+b=t
+print("Values after swapping:",a,"and",b)
+
+# 5.--> convert kilometer to miles
+
+a=int(input("enter the distance in kilometer:"))
+a=a*0.62137119
+print("the vale of distance in miles:",a)
+
+# 6.--> value is -ve/+ve/zero
+
+n=int(input("enter the value:"))
+if(n>0):
+    print("value is +ve")
+if(n<0):
+    print("value is -ve")
+if(n==0):
+    print("value is zero")
+
+# 7.--> no odd or even
+n=int(input("enter the value of n:"))
+if(n%2==0):
+    print("the no is even")
+else:
+    print("the no is odd")
+
+# 8.--> year is leap year or not
+
+year=int(input("enter the year:"))
+if((year%4==0 and year%100!=0) or year%400==0):
+    print("year is leap year")
+else:
+    print("year is not leap a year")
+
+# 9.--> largest of three no.
+
+a=int(input("enter the value of a:"))
+b=int(input("enter the value of b:"))
+c=int(input("enter the value of c:"))
+if(a>b and a>c):
+    print("largest of three is A:",a)
+elif(b>a and b>c):
+    print("largest of three is B:",b)
+else:
+    print("largest of three is C:",c)
+
+# 9B.--> another method of que 9
+
+a=int(input("enter the value of a:"))
+b=int(input("enter the value of b:"))
+c=int(input("enter the value of c:"))
+maximum=max(a,b,c)
+print("MAXIMUM:",maximum)
+
+# 10.--> convert C to F
+
+Celsius=float(input("enter the temp in C:"))
+F=(Celsius*1.8)+32
+print("Temp. in ferenhite is:",F)
+
+# 11.--> print the factorial
+
+n=int(input("enter the value which calculate factorial:"))
+fact=1
+for i in range(1,n+1):
+ fact=fact*i
+print("The factorial is:",fact)
+
+# 12.--> prime no.
+
+n=int(input("enter the value of n:"))
+count=0
+for i in range(1,n+1):
+    if(n%i==0):
+        count += 1 #isme c++ nhi hota h
+
+if(count==2):
+    print("Prime")
+else:
+    print("Not Prime")
+
+# 13.--> count prime in limit
+
+n=int(input("enter the value of n:"))
+print("Prime numbers are:")
+for i in range(2,n+1):
+    count=0
+    for j in range(1,i+1):
+        if(i%j==0):
+            count += 1
+    if(count==2):  
+               
+     print(i," ")
