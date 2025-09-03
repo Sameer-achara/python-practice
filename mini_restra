@@ -1,0 +1,24 @@
+menu={
+    'Pizza':500,
+    'Pasta':300,
+    'Tea':100,
+    'Sweet':700,
+    'Water':50,
+}
+print("Welcome To The Delicius Restaurent")
+print("Pizza= 500 rs\nPasta= 300 rs\nTea= 100 rs\nSweet= 700 rs\nWater= 50 rs")
+item=input("Enter Your First Dish:").capitalize()
+order_total=0
+while True:
+ if item in menu:
+    order_total=order_total+menu[item]
+    print(f"Your {item} has been added")
+ else:
+    print(f"This {item} is not in our menu PLZ! Chosse another item")
+ wish=input("Do you Want add anothe item in menu:(yes/no)").lower()
+ if wish != 'yes':
+   break
+
+print("Your total bill is:",order_total)
+print("Thanks For Visiting!")
+
