@@ -1,0 +1,20 @@
+import matplotlib.pyplot as plt
+import random
+import numpy as np
+x=[1,2,4,6]
+y=[23,55,21,18]
+plt.plot(x,y)
+plt.show()
+
+colours=["r","b","g","m"]
+size=[99,94,92,97]
+plt.scatter(x,y,c=colours,s=size,alpha=0.4,marker="*",edgecolors="g",linewidths=2)
+plt.title("sam",fontsize=25)
+plt.xlabel("x-axis")
+plt.ylabel("y-axis")
+plt.show()
+x=[10,6,34,23,45,55,44,78,89,87,56,22,56,33,87,96,34]
+l=[10,20,30,40,50,60,70,80,90,100]
+plt.hist(x,color="r",bins=l,edgecolor="b",histtype="stepfilled",orientation="horizontal",rwidth=0.8)#cumulative=-1
+plt.axvline(40,color="y",label="line")
+plt.show()
